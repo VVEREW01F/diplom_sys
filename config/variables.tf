@@ -17,7 +17,7 @@ variable "default_zone" {
 
 #=========== subnet ==============
 variable "subnets" {
-  description = "Subnets for www cluster"
+  description = "Subnets for site"
 
   type = map(list(object(
     {
