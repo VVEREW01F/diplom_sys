@@ -1,0 +1,6 @@
+- hosts: elastic
+  remote_user: user-data
+  become: yes
+  become_method: sudo
+  roles:
+    - elastic

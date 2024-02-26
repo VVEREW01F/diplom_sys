@@ -1,0 +1,10 @@
+- hosts:
+    webservers
+    # bastion
+    # elastic
+    # kibana
+  remote_user: user-data
+  become: yes
+  become_method: sudo
+  roles:
+    - zabbix_agent
