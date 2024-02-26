@@ -1,8 +1,0 @@
-#cloud-config
-users:
-  - name: user-data
-    groups: sudo
-    shell: /bin/bash
-    sudo: ['ALL=(ALL) NOPASSWD:ALL']
-    ssh-authorized-keys:
-       ssh-rsa
