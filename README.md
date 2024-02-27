@@ -120,3 +120,5 @@ ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
 ![agent](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/agent.PNG)
 
 В результате установки необходимого ПО мониторинга можно приступить к настройке отображения информации в веб-интерфейсе сервера Zabbix.
+![zabbix_1](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/zabbix_2.PNG)
+![zabbix_2](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/Zabbix_3.PNG)
