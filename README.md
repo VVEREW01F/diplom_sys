@@ -41,19 +41,40 @@
 
 2. Пример файла инвентаризации:
     ```ini
-    [web-servers]
-    web1 ansible_host=<web1-ip-address>
-    web2 ansible_host=<web2-ip-address>
+[bastion]
+bastion-host ansible_host=84.201.130.69 ansible_ssh_user=user-data
 
-    [zabbix-server]
-    zabbix ansible_host=<zabbix-ip-address>
+[webservers]
+web1 ansible_host=web1.ru-central1.internal
+web2 ansible_host=web2.ru-central1.internal
 
-    [elk-server]
-    elastic ansible_host=<elastic-ip-address>
-    kibana ansible_host=<kibana-ip-address>
+[elastic]
+elastic-host ansible_host=elastic.ru-central1.internal
 
-    [bastion-host]
-    bastion ansible_host=<bastion-ip-address>
+[kibana]
+kibana-host ansible_host=kibana.ru-central1.internal
+
+[zabbix]
+zabbix-host ansible_host=zabbix.ru-central1.internal
+
+[webservers:vars]
+ansible_ssh_user=user-data
+ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
+
+[elastic:vars]
+ansible_ssh_user=user-data
+ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
+
+[kibana:vars]
+ansible_ssh_user=user-data
+ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
+
+[zabbix:vars]
+ansible_ssh_user=user-data
+ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
+
+
+
     ```
     Развернуя инфроструктура
 ![Yandex_1](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/yandex_1.PNG)
