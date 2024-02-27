@@ -73,7 +73,7 @@ ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
 ansible_ssh_user=user-data
 ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
 ```
-    Развернуя инфроструктура
+    Развернутая инфроструктура
 ![Yandex_1](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/yandex_1.PNG)
 ![Yandex_2](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/yandex_2.PNG)
 
@@ -83,6 +83,7 @@ ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
 ### 2.1. Проверка доступности хостов через ВМ bastion
 
 Начальный этап проверки доступности всех хостов.
+![Ansible_ping](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/ansible_ping.PNG)
 
 ### 2.2. Настройка Веб-серверов
 
