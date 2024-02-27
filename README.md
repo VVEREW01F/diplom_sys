@@ -56,8 +56,8 @@
     bastion ansible_host=<bastion-ip-address>
     ```
     Развернуя инфроструктура
-![Yandex](/VVEREW01F/diplom_sys/blob/main/IMG/yandex_1.PNG)
-![Пример скриншота](https://example.com/path/to/your/screenshot.png)
+![Yandex_1](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/yandex_1.PNG)
+![Yandex_2](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/yandex_2.PNG)
 
 
 ## 2. Ansible. Настройка инфраструктуры.
