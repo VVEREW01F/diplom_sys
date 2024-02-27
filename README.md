@@ -91,6 +91,8 @@ ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
 
 Запуск скрипта 1-webserv-playbook.yml для разворачивания и запуска HTTP-серверов Nginx на двух ВМ. Передача начального набора файлов для сайта и замена конфигурационного файла nginx.conf.
 ![nginx](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/nginx.PNG)
+![curl](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/curl.PNG)
+![site](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/site.PNG)
 
 ### 2.3. Настройка сервера Elasticsearch
 
