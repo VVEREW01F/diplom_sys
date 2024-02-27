@@ -111,12 +111,12 @@ ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
 
 ### 2.6. Настройка сервера мониторинга Zabbix
 
-Запуск скрипта 5-zabbix_server-playbook.yml для разворачивания сервера мониторинга Zabbix. Начальная конфигурация базы данных, правка конфигурационного файла zabbix_server.conf.
+Запуск скрипта 5-zabbix_server-playbook.yml для разворачивания сервера мониторинга Zabbix.
 ![zabbix](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/zabbix_1.PNG)
 
 ### 2.7. Установка Zabbix-agent на все ВМ
 
-Запуск скрипта 6-zabbix_agent-playbook.yml для установки ПО Zabbix-agent на все ВМ. Настройка конфигурационного файла zabbix_agentd.conf.
+Запуск скрипта 6-zabbix_agent-playbook.yml для установки ПО Zabbix-agent на все ВМ.
 ![agent](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/agent.PNG)
 
 В результате установки необходимого ПО мониторинга можно приступить к настройке отображения информации в веб-интерфейсе сервера Zabbix.
