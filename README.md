@@ -40,7 +40,7 @@
     ```
 
 2. Пример файла инвентаризации:
-    ```ini
+```
 [bastion]
 bastion-host ansible_host=84.201.130.69 ansible_ssh_user=user-data
 
@@ -72,10 +72,7 @@ ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
 [zabbix:vars]
 ansible_ssh_user=user-data
 ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
-
-
-
-    ```
+```
     Развернуя инфроструктура
 ![Yandex_1](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/yandex_1.PNG)
 ![Yandex_2](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/yandex_2.PNG)
