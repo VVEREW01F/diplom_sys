@@ -88,25 +88,31 @@ ansible_ssh_common_args='-o ProxyCommand="ssh -W %h:%p user-data@84.201.130.69"'
 ### 2.2. Настройка Веб-серверов
 
 Запуск скрипта 1-webserv-playbook.yml для разворачивания и запуска HTTP-серверов Nginx на двух ВМ. Передача начального набора файлов для сайта и замена конфигурационного файла nginx.conf.
+![nginx](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/nginx.PNG)
 
 ### 2.3. Настройка сервера Elasticsearch
 
 Запуск скрипта 2-elastic-playbook.yml для разворачивания сервера Elasticsearch в Docker-контейнере. Установка Docker и необходимых пакетов.
+![Elastic](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/elastic.PNG)
 
 ### 2.4. Настройка Kibana
 
 Запуск скрипта 3-kibana-playbook.yml для разворачивания Docker-контейнера с Kibana (веб-интерфейс для Elasticsearch). Установка Docker и необходимых пакетов.
-
+![Elastic_1](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/kibana.PNG)
+![Kibana](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/elastic_1.PNG)
 ### 2.5. Настройка Filebeat
 
 Запуск скрипта 4-filebeat-playbook.yml для установки, настройки и запуска ПО Filebeat на ВМ с веб-серверами. Конфигурация настроена на отправку access.log и error.log Nginx в Elasticsearch.
+![filebeat](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/filebit.PNG)
 
 ### 2.6. Настройка сервера мониторинга Zabbix
 
 Запуск скрипта 5-zabbix_server-playbook.yml для разворачивания сервера мониторинга Zabbix. Начальная конфигурация базы данных, правка конфигурационного файла zabbix_server.conf.
+![zabbix](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/zabbix_1.PNG)
 
 ### 2.7. Установка Zabbix-agent на все ВМ
 
 Запуск скрипта 6-zabbix_agent-playbook.yml для установки ПО Zabbix-agent на все ВМ. Настройка конфигурационного файла zabbix_agentd.conf.
+![agent](https://github.com/VVEREW01F/diplom_sys/blob/main/IMG/agent.PNG)
 
 В результате установки необходимого ПО мониторинга можно приступить к настройке отображения информации в веб-интерфейсе сервера Zabbix.
